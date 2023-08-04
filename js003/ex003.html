@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começo de javascript</title>
+    <style>
+        body {
+            background-color: rgb(185, 80, 185);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro exercício de javascript</h1>
+    <p>Professor Gustavo Guanabara</p>
+
+    <script>
+        var n1 =  window.prompt('Digitr um número: ')
+        var n2 = Number.parseFloat(window.prompt('Digite um outro número: '))
+        var n3 = Number(window.prompt('Digite o terceiro número: '))
+        var s = Number.parseFloat(n1) + n2 + n3
+        window.alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a ${s}`)
+        // + pode servir para concatenar: string + string
+        // + serve para somar: number + number
+
+        // para somar vc deve converte de string para number através dos comandos Number.parseFloat() antes do window.prompt ou do n1
+        // Pode usar somente Number
+    </script>
+</body>
+</html>
