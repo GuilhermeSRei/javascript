@@ -36,6 +36,27 @@ section {
     gap: 1em;
 }
 
+div#elm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+div#elm > select#guarda {
+    width: 19em;
+    height: 15em;
+    border: 1px solid #3F7396;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: transparent;
+}
+
+select#guarda > option {
+    font-size: 1.4em;
+}
+
 p {
     font-size: 1em;
 }
