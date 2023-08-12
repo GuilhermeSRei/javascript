@@ -1,14 +1,21 @@
 function calcular() {
     var num = document.getElementById('num')
-    var n = Number(num.value)
-    var res = document.getElementById('res')
+    
+    var tab = document.getElementById('seltab')
 
     if (num.value.length == 0) {
         res.innerHTML = 'Adicione um número acima'
     } else {
-        do {
-            
-        } while (n >= 0)
+        var n = Number(num.value)
+        let c = 1
+        
+        tab.innerHTML = ''
+
+        while(c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n * c++}`
+            tab.appendChild(item)
+        }
     }
     
 }

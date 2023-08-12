@@ -2,6 +2,8 @@
 
 body {
     background-image: linear-gradient(to right, #fbb034, #ffdd00);
+    width: 100vw;
+
     font: normal 15pt Arial;
 }
 
@@ -21,6 +23,26 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+select {
+    width: 14em;
+    height: 13em;
+    font-size: 1em;
+    padding: 0.4em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+p > input {
+    padding: 0.5em;
+    font-size: 16px;
 }
 
 footer h3 {
